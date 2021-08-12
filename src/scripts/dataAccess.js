@@ -11,6 +11,7 @@ export const fetchRequests = () => {
             (serviceRequests) => {
                 // Store the external state in application state
                 applicationState.requests = serviceRequests
+                console.log(serviceRequests)
             }
         )
 }
