@@ -47,6 +47,7 @@ export const sendRequest = (userServiceRequest) => {
 //This function deletes a **specific** request, which is why it takes a unique identifier as an argument. 
 //in our fetch request, we specify that we're specifically looking for an id, that we want to use the method DELETE on it.
 //.then, dispatch to custom event listener.
+
 export const deleteRequest = (id) => {
     return fetch(`${API}/requests/${id}`, { method: "DELETE" })
         .then(
