@@ -9,14 +9,14 @@ const render = () => {
         () => {
             mainContainer.innerHTML = SinkRepair()
         }
-        )
-    }
+    )
+}
 
 mainContainer.addEventListener(
-        "stateChanged",
-        customEvent => {
-            render()
-        }
-    )
+    "stateChanged",
+    customEvent => {
+        render()
+    }
+)
     
 render()
